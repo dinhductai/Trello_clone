@@ -7,6 +7,7 @@ import lombok.*;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "site_user")
@@ -44,4 +45,8 @@ public class SiteUserEntity implements Serializable {
     @Enumerated(EnumType.STRING)
     @Column(name = "role")
     private Role role;
+
+    @OneToMany(mappedBy = "siteUser", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<BoardEntity> boards;
+
 }
