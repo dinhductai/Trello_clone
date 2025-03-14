@@ -1,7 +1,6 @@
 package com.trello.trello.Repository;
 
 
-import com.trello.trello.Dto.Response.SiteUserResponseDTO;
 import com.trello.trello.Entity.SiteUserEntity;
 import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
@@ -9,9 +8,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
-import java.util.Objects;
 
 @Repository
 @Transactional

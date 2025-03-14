@@ -1,7 +1,6 @@
 package com.trello.trello.Dto.Response;
 
 import com.trello.trello.Enum.Status;
-import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Date;
@@ -12,7 +11,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Getter
 @Setter
-public class SiteUserResponseDTO {
+public class SiteUserResponse {
     private String name;
     private String email;
     private String image;
